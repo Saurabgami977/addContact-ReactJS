@@ -1,27 +1,23 @@
 import * as actionTypes from '../actionTypes';
 
 const initialState = {
-    isFavourite: false,
-    currentID: null,
-};
+    loading: false,
+    data: null
+}
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.TOOGLE_FAVOURITE:
+        case actionTypes.FETCHING_DATA:
             return {
                 ...state,
-                isFavourite: !state.isFavourite
+                loading: !state.loading
             }
-        case actionTypes.EDIT_CONTACT:
+        case actionTypes.FETCH_CONTACTS:
             return {
                 ...state,
-                currentID: action.id
+                data: action.data
             }
-        default:
-            return {
-                state
-            }
-
+        default: return state
     }
 }
 

@@ -12,17 +12,20 @@ import thunk from 'redux-thunk';
 
 import favouriteReducer from './store/reducers/favouriteReducer';
 import submitReducer from './store/reducers/submitReducer';
+import contactReducer from './store/reducers/contactReducer';
 
 const rootReducer = combineReducers({
   favourite: favouriteReducer,
-  submit: submitReducer
+  submit: submitReducer,
+  contacts: contactReducer
 })
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+    <BrowserRouter basename={'addContact-ReactJS'}>
       <App />
     </BrowserRouter>
   </Provider>,

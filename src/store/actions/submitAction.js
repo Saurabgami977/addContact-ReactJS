@@ -14,7 +14,6 @@ export const submitForm = (data) => {
         axios.post(`/contacts.json`, data)
             .then(res => {
                 dispatch(saveFormSuccess())
-                console.log(res)
             })
             .catch(err => {
                 alert(err)

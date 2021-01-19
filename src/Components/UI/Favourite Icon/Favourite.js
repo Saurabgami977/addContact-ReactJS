@@ -12,7 +12,7 @@ function Favourite(props) {
             <h3>Favourite:</h3>
             <img
                 onClick={() => props.toggleFav()}
-                style={{ backgroundColor: props.isFav ? 'yellow' : 'white' }}
+                style={{ backgroundColor: props.isFav ? 'red' : 'white' }}
                 className={classes.Favourite}
                 src={FavouriteIcon}
                 alt="Favourite Icon"

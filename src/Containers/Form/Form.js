@@ -26,7 +26,6 @@ function Form(props) {
         setEmail('')
         setNumber('')
     }
-
     return (
         props.load ? <Spinner /> :
             <form
@@ -37,7 +36,7 @@ function Form(props) {
                 <Input change={e => setName(e.target.value)} value={name} type="text" placeholder='Name' />
                 <Input change={e => setNumber(e.target.value)} value={number} type="number" placeholder='Phone Number' />
                 <Input change={e => setEmail(e.target.value)} value={email} type="email" placeholder='Email' />
-                <Button class="btn-primary">Submit</Button>
+                <Button class="btn-primary">{props.currentID ? 'Update' : 'Submit'}</Button>
             </form>
     )
 }
@@ -45,13 +44,15 @@ function Form(props) {
 const mapStateToProps = state => {
     return {
         load: state.submit.loading,
-        isFavourite: state.favourite.isFavourite
+        isFavourite: state.favourite.isFavourite,
+        data: state.contacts.data,
+        currentID: state.favourite.currentID
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        onSubmit: (data) => dispatch(actions.submitForm(data))
+        onSubmit: (data) => dispatch(actions.submitForm(data)),
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Form)

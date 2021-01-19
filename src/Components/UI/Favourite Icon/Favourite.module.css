@@ -5,7 +5,7 @@
 }
 
 .Favourite {
-  height: 20px;
-  background-color: yellow;
+  height: 40px;
+  background-color: red;
   cursor: pointer;
 }

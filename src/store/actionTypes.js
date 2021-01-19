@@ -1,3 +1,8 @@
 export const TOOGLE_FAVOURITE = 'TOOGLE_FAVOURITE';
 
 export const SUBMIT_FORM = "SUBMIT_FORM";
+
+export const FETCH_CONTACTS = 'FETCH_CONTACTS';
+export const FETCHING_DATA = 'FETCHING_DATA';
+
+export const EDIT_CONTACT = 'EDIT_CONTACT';
