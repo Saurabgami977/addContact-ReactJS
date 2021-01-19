@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/addContact-ReactJS/static/css/main.bf747f8d.chunk.css",
+    "main.js": "/addContact-ReactJS/static/js/main.456526a8.chunk.js",
+    "main.js.map": "/addContact-ReactJS/static/js/main.456526a8.chunk.js.map",
+    "runtime-main.js": "/addContact-ReactJS/static/js/runtime-main.3e8d2c3d.js",
+    "runtime-main.js.map": "/addContact-ReactJS/static/js/runtime-main.3e8d2c3d.js.map",
+    "static/js/2.44bbf848.chunk.js": "/addContact-ReactJS/static/js/2.44bbf848.chunk.js",
+    "static/js/2.44bbf848.chunk.js.map": "/addContact-ReactJS/static/js/2.44bbf848.chunk.js.map",
+    "static/js/3.36a4d38a.chunk.js": "/addContact-ReactJS/static/js/3.36a4d38a.chunk.js",
+    "static/js/3.36a4d38a.chunk.js.map": "/addContact-ReactJS/static/js/3.36a4d38a.chunk.js.map",
+    "index.html": "/addContact-ReactJS/index.html",
+    "static/css/main.bf747f8d.chunk.css.map": "/addContact-ReactJS/static/css/main.bf747f8d.chunk.css.map",
+    "static/js/2.44bbf848.chunk.js.LICENSE.txt": "/addContact-ReactJS/static/js/2.44bbf848.chunk.js.LICENSE.txt",
+    "static/media/star.4ef7063e.svg": "/addContact-ReactJS/static/media/star.4ef7063e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e8d2c3d.js",
+    "static/js/2.44bbf848.chunk.js",
+    "static/css/main.bf747f8d.chunk.css",
+    "static/js/main.456526a8.chunk.js"
+  ]
+}
