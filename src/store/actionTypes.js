@@ -1,0 +1,3 @@
+export const TOOGLE_FAVOURITE = 'TOOGLE_FAVOURITE';
+
+export const SUBMIT_FORM = "SUBMIT_FORM";

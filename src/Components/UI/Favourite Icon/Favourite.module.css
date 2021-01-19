@@ -1,0 +1,11 @@
+.outerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Favourite {
+  height: 20px;
+  background-color: yellow;
+  cursor: pointer;
+}
