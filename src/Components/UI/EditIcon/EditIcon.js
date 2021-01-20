@@ -9,7 +9,7 @@ function EditIcons(props) {
 
     const clickHandler = () => {
         props.history.push('/add-contact');
-        props.onEdit(props.id);
+        props.fetchEditData(props.id);
     }
     return (
         <EditIcon
@@ -21,7 +21,7 @@ function EditIcons(props) {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onEdit: (id) => dispatch(actions.setEditId(id))
+        fetchEditData: (id) => dispatch(actions.fetchEditData(id))
     }
 }
 

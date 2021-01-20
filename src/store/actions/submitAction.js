@@ -9,11 +9,14 @@ export const saveFormSuccess = () => {
 
 
 export const submitForm = (data) => {
+    console.log(data, '[submit]')
     return dispatch => {
         dispatch(saveFormSuccess())
-        axios.post(`/contacts.json`, data)
+        let url = data.id !== null ? `/contacts/${data.id}.json` : '/contacts.json';
+        axios.post(url, data)
             .then(res => {
                 dispatch(saveFormSuccess())
+                console.log(res)
             })
             .catch(err => {
                 alert(err)

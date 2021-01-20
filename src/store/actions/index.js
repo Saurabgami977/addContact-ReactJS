@@ -1,6 +1,6 @@
 export {
     toggleFavourite,
-    setEditId,
+    fetchEditData,
     deleteContact
 } from './favouriteAction';
 

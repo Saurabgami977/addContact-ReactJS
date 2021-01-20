@@ -8,10 +8,23 @@ export const toggleFavourite = () => {
     }
 }
 
-export const setEditId = (id) => {
+export const setEditData = (data, id) => {
     return {
         type: actionTypes.EDIT_CONTACT,
-        id: id
+        data: data,
+        id: id,
+        isFav: data.isFavourite
+    }
+}
+
+//fetching current edit data
+export const fetchEditData = (id) => {
+    return dispatch => {
+        axios.get(`/contacts/${id}.json`)
+            .then(res => {
+                dispatch(setEditData(res.data, id))
+            })
+            .catch(err => console.log(err));
     }
 }
 

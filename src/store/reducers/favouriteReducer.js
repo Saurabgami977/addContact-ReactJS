@@ -2,7 +2,8 @@ import * as actionTypes from '../actionTypes';
 
 const initialState = {
     isFavourite: false,
-    currentID: null,
+    currentData: null,
+    id: null
 };
 
 const reducer = (state = initialState, action) => {
@@ -15,7 +16,9 @@ const reducer = (state = initialState, action) => {
         case actionTypes.EDIT_CONTACT:
             return {
                 ...state,
-                currentID: action.id
+                currentData: action.data,
+                isFavourite: action.isFav,
+                id: action.id
             }
         default:
             return {
